@@ -9,7 +9,6 @@ app.use(express.static('public'));
 
 app.get('/', (req, resp) => {
     resp.render('index');
-    //hello
 })
 app.get('/book', (req, resp) => {
     resp.render('book');
