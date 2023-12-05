@@ -9,10 +9,15 @@ app.use(express.static('public'));
 
 app.get('/', (req, resp) => {
     resp.render('index');
-    //he
+})
+app.get('/index',(req,resp)=>{
+    resp.render('index');
 })
 app.get('/book', (req, resp) => {
     resp.render('book');
+});
+app.get('/login',(req,resp)=>{
+    resp.render('login');
 });
 
 app.listen(port, () => {
